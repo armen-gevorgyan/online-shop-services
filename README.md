@@ -50,4 +50,4 @@ This C++ library is intended to provide services that can be embedded in the onl
     - 🬀 TODO
 
 ### Later
-Please refer to the [list_todo.txt](https://github.com/armen-gevorgyan/online-shop-services/blob/master/list_todo.txt) file, where is depicted the remaining list of tasks should be done.
+Please refer to the [list_todo.md](https://github.com/armen-gevorgyan/online-shop-services/blob/master/list_todo.md) file, where is depicted the remaining list of tasks should be done.

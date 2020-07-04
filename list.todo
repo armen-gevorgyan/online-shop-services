@@ -5,7 +5,7 @@
     
 🬀 User database implementation
     ✔️ Define user properties
-        ✔️ The [Properties.txt](https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/user/Properties.md)  file has been added with the list of properties of the user's that are needed for the online shop services.
+        ✔️ The <a href="https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/user/Properties.txt"> Properties.txt </a> file has been added with the list of properties of the user's that are needed for the online shop services.
     🬀 Implement an initial version of the User type
     🬀 Finalize the User type definition
     🬀 Define user database

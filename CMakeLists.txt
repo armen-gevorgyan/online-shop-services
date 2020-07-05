@@ -17,3 +17,4 @@ if (CLEANUP_WARNINGS)
 endif()
 
 add_subdirectory(source)
+add_subdirectory(test)

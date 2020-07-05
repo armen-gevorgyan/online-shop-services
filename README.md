@@ -1,7 +1,8 @@
 # online-shop-services
-This C++ library is intended to provide services that can be embedded in the online shop solutions
 
 ## About
+
+This C++ library is intended to provide services that can be embedded in the online shop solutions
 
 ## Setup
 
@@ -12,10 +13,15 @@ This C++ library is intended to provide services that can be embedded in the onl
 ## Build
 
 - build:
-    - `cmake .`
+    - `mkdir build`
+    - `cd build`
+    - `cmake ../`
       - to build in debug mode (`-g -O0`), add `-DCMAKE_BUILD_TYPE=Debug`
       - to enable extra warnings (`-Wno-unused -Wno-unused-parameter -Wall -Wextra -Werror`), add `-DCLEANUP_WARNINGS=1`.
     - `make all`
+
+- clean:
+  - `rm -rf build`
 
 ## Test
 
@@ -32,6 +38,12 @@ This C++ library is intended to provide services that can be embedded in the onl
 
 - Cmake with minimum version 3.16.3
 - Doxygen with minimum version 1.8.17
+- Dot - graphviz version 2.43.0
+
+## Project tracking
+
+Please refer to the [list_todo.md](https://github.com/armen-gevorgyan/online-shop-services/blob/master/list_todo.md) file, 
+where is depicted the tasks already done, and the remaining list of tasks should be done.
 
 ## Roadmap
 
@@ -59,4 +71,7 @@ This C++ library is intended to provide services that can be embedded in the onl
     - 🬀 TODO
 
 ### Later
-Please refer to the [list_todo.md](https://github.com/armen-gevorgyan/online-shop-services/blob/master/list_todo.md) file, where is depicted the remaining list of tasks should be done.
+- 🬀 Core user activity
+  - 🬀 TODO
+- 🬀 Purchasing an item
+  - 🬀 TODO

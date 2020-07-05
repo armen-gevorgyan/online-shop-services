@@ -3,25 +3,32 @@
 The user of the online shop services should have at least the following list of properties
 
 - ✔️ Name
+  - ✔️ The mandatory property set/get methods are provided.
+- ✔️ Surname
+  - ✔️ The mandatory property set/get methods are provided.
+- 🬀 Middle Name
+  - 🬀 Secondary
+- ✔️ Password
     - ✔️ The mandatory property set/get methods are provided.
-- 🬀 Password
-    - 🬀 Mandatory
-- 🬀 Activity
-    - 🬀 Mandatory
-        - 🔘 Login
-        - 🔘 Logoff
+- ✔️ Authorized
+  - ✔️ The mandatory property set/get methods are provided.
+    - 🔘 On
+    - 🔘 Off
 - 🬀 Email
-    - 🬀 Secondary
+  - 🬀 Secondary
 - 🬀 Date of birth
-    - 🬀 Secondary
+  - 🬀 Secondary
 - 🬀 Contact number
-    - 🬀 Secondary
+  - 🬀 Secondary
 - 🬀 Type
-    - 🬀 Secondary
-        - 🔘 Client
-        - 🔘 Seller
-        - 🔘 Both
+  - 🬀 Secondary
+    - 🔘 Client
+    - 🔘 Seller
+    - 🔘 Both
 - 🬀 History of purchases
-    - 🬀 Secondary
+  - 🬀 Secondary
 - 🬀 History of sold items
-    - 🬀 Secondary
+  - 🬀 Secondary
+- 🬀 Activity
+  - 🬀 Secondary
+    - Keep the track of recent logins and from which OS the signing was done

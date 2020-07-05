@@ -17,3 +17,6 @@ macro(add_user_test SOURCE)
 endmacro(add_user_test)
 
 add_user_test(Name)
+add_user_test(Surname)
+add_user_test(Password)
+add_user_test(Authorization)

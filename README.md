@@ -31,6 +31,11 @@ This C++ library is intended to provide services that can be embedded in the onl
 
 ## Documentation
 
+- Generate the documentation
+  - `cd build`
+  - `make doc`
+
+
 ## Conventions
 
 ## Porting

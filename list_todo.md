@@ -23,14 +23,17 @@
 - ✔️ Create a skeleton of the source hierarchy 
 - ✔️ Generate a new library of the user type by providing CMake files for the user type implementation
 - ✔️ Generate a new test executable for the implemented basic functionality testing of the User type
+- ✔️ Enable the testing and run the available tests
+- 🬀 Enable the Doxygen documentation generation 
 - 🬀 Generate a new library of the user database by providing CMake files for the user database implementation
 - 🬀 Generate a new test executable for the implemented basic functionality testing of the User database
 - 🬀 Integrate the CPR project from https://github.com/whoshuu/cpr as an external module in order to have the easy interfaces for the HTTP protocol.
 
 ## Testing
 - ✔️ Implement the basic testing of the User type
-- 🬀 Extended testing of the finalized User type implementation
+- ✔️ Extended testing of the finalized User type implementation
 - 🬀 Implement the basic testing of the User database
 
 ## Overall improvements
+- 🬀 Integrate the Valgrind tool to make analyses of the code memory management, threading, performance, etc.
 - 🬀 Code coverage for the tests

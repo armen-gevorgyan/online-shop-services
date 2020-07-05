@@ -12,9 +12,15 @@ This C++ library is intended to provide services that can be embedded in the onl
 ## Build
 
 - build:
-
+    - `cmake .`
+      - to build in debug mode (`-g -O0`), add `-DCMAKE_BUILD_TYPE=Debug`
+      - to enable extra warnings (`-Wno-unused -Wno-unused-parameter -Wall -Wextra -Werror`), add `-DCLEANUP_WARNINGS=1`.
+    - `make all`
 
 ## Test
+
+- Run all tests
+  - `make test'
 
 ## Documentation
 
@@ -23,6 +29,7 @@ This C++ library is intended to provide services that can be embedded in the onl
 ## Porting
 
 ## Requirements
+
 - Cmake with minimum version 3.16.3
 - Doxygen with minimum version 1.8.17
 

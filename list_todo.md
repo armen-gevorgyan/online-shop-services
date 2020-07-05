@@ -20,7 +20,7 @@
 
 ## Build environment setup
 - ✔️ Create a skeleton of the source hierarchy 
-- 🬀 Generate a new library of the user type by providing CMake files for the user type implementation
+- ✔️ Generate a new library of the user type by providing CMake files for the user type implementation
 - 🬀 Generate a new test executable for the implemented basic functionality testing of the User type
 - 🬀 Generate a new library of the user database by providing CMake files for the user database implementation
 - 🬀 Generate a new test executable for the implemented basic functionality testing of the User database

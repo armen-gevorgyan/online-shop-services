@@ -23,6 +23,8 @@ This C++ library is intended to provide services that can be embedded in the onl
 ## Porting
 
 ## Requirements
+- Cmake with minimum version 3.16.3
+- Doxygen with minimum version 1.8.17
 
 ## Roadmap
 

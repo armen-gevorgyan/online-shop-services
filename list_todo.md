@@ -7,8 +7,8 @@
     
 ## User database implementation
 - ✔️ Define user properties
-  - ✔️ The [Properties.md] (https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/user/Properties.md) file has been added with the list of properties of the user's that are needed for the online shop services.
-- 🬀 Implement an initial version of the User type
+  - ✔️ The [Properties.md](https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/user/Properties.md) file has been added with the list of properties of the user's that are needed for the online shop services.
+- ✔️ Implement an initial version of the User type
 - 🬀 Finalize the User type definition
 - 🬀 Define user database
 - 🬀 Create hardcoded user database for testing samples till later on sign up will be implemented 
@@ -19,7 +19,7 @@
 - 🬀 TODO
 
 ## Build environment setup
-- 🬀 Create a skeleton of the source hierarchy 
+- ✔️ Create a skeleton of the source hierarchy 
 - 🬀 Generate a new library of the user type by providing CMake files for the user type implementation
 - 🬀 Generate a new test executable for the implemented basic functionality testing of the User type
 - 🬀 Generate a new library of the user database by providing CMake files for the user database implementation

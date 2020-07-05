@@ -2,8 +2,8 @@
 ## Description
 The user of the online shop services should have at least the following list of properties
 
-- 🬀 Name
-    - 🬀 Mandatory
+- ✔️ Name
+    - ✔️ The mandatory property set/get methods are provided.
 - 🬀 Password
     - 🬀 Mandatory
 - 🬀 Activity

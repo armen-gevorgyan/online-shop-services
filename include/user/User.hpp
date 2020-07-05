@@ -26,12 +26,12 @@ namespace oss
         public:
 
         /**
-         * @Default constructor
+         * @brief Default constructor
          */
         User();
         
         /**
-         * @Parametrized constructor
+         * @brief Parametrized constructor
          * 
          * @param name is used to update the name of the user
          * @param surname is used to update the surname of the user

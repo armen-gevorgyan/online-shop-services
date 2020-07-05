@@ -26,7 +26,8 @@ This C++ library is intended to provide services that can be embedded in the onl
 ## Test
 
 - Run all tests
-  - `make test'
+  - `cd build`
+  - `make test`
 
 ## Documentation
 

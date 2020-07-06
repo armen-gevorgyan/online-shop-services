@@ -7,7 +7,11 @@ This C++ library is intended to provide services that can be embedded in the onl
 ## Setup
 
 - clone the repository:
-    - `git clone https://github.com/armen-gevorgyan/online-shop-services.git`
+    - `git clone --recursive https://github.com/armen-gevorgyan/online-shop-services.git`
+      - `--recursive` is needed to pull external modules
+    - In case if `--recursive` flag has been forgotten during the clone, then following commands can be run to pull the external modules:
+      - `git submodule init`
+      - `git submodule update`
 
 
 ## Build
@@ -45,12 +49,19 @@ This C++ library is intended to provide services that can be embedded in the onl
 - Cmake with minimum version 3.16.3
 - Doxygen with minimum version 1.8.17
 - Dot - graphviz version 2.43.0
+- CPR version 1.5.0
+    - Development SSL, i.e. libssl-dev
 
 ## Project tracking
 
 Please refer to the [list_todo.md](https://github.com/armen-gevorgyan/online-shop-services/blob/master/list_todo.md) file, 
 where is depicted the tasks already done, and the remaining list of tasks should be done.
 
+## Acknowledgements
+
+This project uses code from
+- https://github.com/whoshuu/cpr
+  
 ## Roadmap
 
 ### Version 1.0

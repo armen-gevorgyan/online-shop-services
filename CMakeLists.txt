@@ -17,6 +17,9 @@ if (CLEANUP_WARNINGS)
     )
 endif()
 
+### Integrate external projects
+add_subdirectory(external)
+
 add_subdirectory(source)
 add_subdirectory(test)
 add_subdirectory(documentation)

@@ -32,13 +32,16 @@
 - ✔️ Implement build clean 
 - 🬀 Generate a new library of the user database by providing CMake files for the user database implementation
 - 🬀 Generate a new test executable for the implemented basic functionality testing of the User database
-- 🬀 Integrate the CPR project from https://github.com/whoshuu/cpr as an external module in order to have the easy interfaces for the HTTP protocol.
+- ✔️ Integrate the CPR project from https://github.com/whoshuu/cpr as an external module in order to have the 
+easy interfaces for the HTTP protocol.
 
 ## Testing
 - ✔️ Implement the basic testing of the User type
 - ✔️ Extended testing of the finalized User type implementation
+- ✔️ Implement the basic testing of the HTTP get request test from the newly integrated project
 - 🬀 Implement the basic testing of the User database
 
 ## Overall improvements
+- 🬀 Integrate the Google init tests instead of asserts
 - 🬀 Integrate the Valgrind tool to make analyses of the code memory management, threading, performance, etc.
 - 🬀 Code coverage for the tests

@@ -29,8 +29,11 @@ This C++ library is intended to provide services that can be embedded in the onl
 
 ## Test
 
-- Run all tests
+- Run all tests (including tests from external projects)
   - `cd build`
+  - `make test`
+- Run only tests from `online-shop-services`
+  - `cd build/test`
   - `make test`
 
 ## Documentation

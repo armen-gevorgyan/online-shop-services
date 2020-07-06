@@ -2,7 +2,39 @@
 
 ## About
 
-This C++ library is intended to provide services that can be embedded in the online shop solutions
+This C++ library is intended to provide services that can be embedded in the online shop solutions. With the library, the 
+following microservices are provided.
+    - 🬀 Authentication
+      - The authentication details such as user name and password are provided from the Web/Mobile application. The service has
+      been validating whether the provided user name is presented in the user database. In case if it's presented then the
+      provided password is compared with the one that was stored in the DB. In case if passwords are matching a token(or some
+      session data is being encrypted) is generated and is provided back to the Web/Mobile application with the status that
+      authentication successfully passed. In all other cases, the token is not generated, and only failed status is being
+      provided back to the Web/Mobile interface.
+    - 🬀 Cart
+      - Add to Cart public interface is available from the Web/Mobile application. The item details alongside with the generated
+      token from the Authentication service are provided from the Web/Mobile application. At first provided token is validated
+      by the Authentication service. In case if the token is authorized then the Cart service has been validating whether the
+      provided item is presented in the Item Database. In case if it's presented then the provided item is being added into the
+      Cart database and successful status is being returned back to the Web/Mobile application. In all other cases, the failed
+      status is being provided back to the Web/Mobile interface.
+    - 🬀 Items
+      - The following public interfaces are available from the Web/Mobile.
+        - Search Item
+        - Get Items list
+      - The request details alongside with the generated token from the Authentication service are provided from the Web/Mobile
+      application. At first provided token is validated by the Authentication service. In case if the token is authorized then
+      the Item service handling the request, i.e. either it's checking whether the item is presented in the Item Database or
+      just collecting all the data from the DB and is providing back.
+    - 🬀 History
+      - The request details alongside with the generated token from the Authentication service are provided from the Web/Mobile
+      application. At first provided token is validated by the Authentication service. In case if the token is authorized then
+      the history actions are collected from the History DB and are provided back.
+Also, there is Gateway service which is responsible for getting the data from the Web/Mobile interface and redirect it to the
+right service, i.e. on of the above-mentioned ones.
+
+The [OnlineShopMicroservices](https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/diagrams/OnlineShopMicroservices.jpg) high-level diagram is presented to depict the above-mentioned
+microservices and their communications with each other as well as Web/Mobile interfaces.
 
 ## Setup
 
@@ -44,6 +76,8 @@ This C++ library is intended to provide services that can be embedded in the onl
 
 
 ## Conventions
+- The 🬀 symbol means the topic is not done yet
+- The ✔️ symbol means the topic is done
 
 ## Porting
 
@@ -69,29 +103,39 @@ This project uses code from
 
 ### Version 1.0
 - 🬀 User database
-    - 🬀 Properties
-    - 🬀 API documentation    
+  - 🬀 Properties
+  - 🬀 API documentation
+- 🬀 Cart database
+  - 🬀 Properties
+  - 🬀 API documentation
 
 ### Version 1.1
+- 🬀 Items database
+- 🬀 History database
+
+### Version 1.3
 - 🬀 Authentication Service
     - 🬀 Define which external modules(e.g. http) are needed and what to use
     - 🬀 Define an API interface for login
     - 🬀 Implement HTTP server to provide the sample data of username and password
     - 🬀 Implement single user authentication
     - 🬀 Implement multiple user authentication
-- 🬀 API documentation
+- 🬀 Items Service
 
-### Version 1.2
-- 🬀 Item database
-    - 🬀 Properties
-    - 🬀 API documentation    
+### Version 1.4
+- 🬀 Cart Service
+- 🬀 History Service
 
-### Version 1.3
-- 🬀 Item Search Service
-    - 🬀 TODO
+### Version 1.5
+- 🬀 Gateway Service
+
+### Version 1.6
+- 🬀 User interaction with WEB/Mobile interface
+  - 🬀 Login
+  - 🬀 Search item
+  - 🬀 Add to cart
+  - 🬀 Get items list
 
 ### Later
 - 🬀 Core user activity
-  - 🬀 TODO
 - 🬀 Purchasing an item
-  - 🬀 TODO

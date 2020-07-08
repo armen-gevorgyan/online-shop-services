@@ -7,28 +7,24 @@ The user of the online shop services should have at least the following list of 
 - ✔️ Surname
   - ✔️ The mandatory property set/get methods are provided.
 - 🬀 Middle Name
-  - 🬀 Secondary
 - ✔️ Password
     - ✔️ The mandatory property set/get methods are provided.
 - ✔️ Authorized
   - ✔️ The mandatory property set/get methods are provided.
     - 🔘 On
     - 🔘 Off
+- 🬀 Token
+  - A temporary token that is generated based on the successful authorization.
 - 🬀 Email
-  - 🬀 Secondary
 - 🬀 Date of birth
-  - 🬀 Secondary
 - 🬀 Contact number
-  - 🬀 Secondary
 - 🬀 Type
-  - 🬀 Secondary
-    - 🔘 Client
-    - 🔘 Seller
-    - 🔘 Both
+  - 🔘 Client
+  - 🔘 Seller
+  - 🔘 Both
+- 🬀 Permission
+  - Define the level of permissions that can be used to determine and grant access to the particular services
 - 🬀 History of purchases
-  - 🬀 Secondary
 - 🬀 History of sold items
-  - 🬀 Secondary
 - 🬀 Activity
-  - 🬀 Secondary
     - Keep the track of recent logins and from which OS the signing was done

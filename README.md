@@ -18,6 +18,7 @@ following microservices are provided.
   provided item is presented in the Item Database. In case if it's presented then the provided item is being added into the
   Cart database and successful status is being returned back to the Web/Mobile application. In all other cases, the failed
   status is being provided back to the Web/Mobile interface.
+  - Purchase public interface is available from the Web/Mobile applications.
 - 🬀 Items
   - The following public interfaces are available from the Web/Mobile.
     - Search Item
@@ -91,8 +92,8 @@ microservices and their communications with each other as well as Web/Mobile int
 
 ## Project tracking
 
-Please refer to the [list_todo.md](https://github.com/armen-gevorgyan/online-shop-services/blob/master/list_todo.md) file, 
-where is depicted the tasks already done, and the remaining list of tasks should be done.
+Please refer to the [ReleasePlanVersion1.0](https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/releases/ReleasePlanVersion_1_0.md) document, 
+to follow and get the status of the mandatory topics to be done for the 1.0 release.
 
 ## Acknowledgements
 
@@ -103,39 +104,43 @@ This project uses code from
 
 ### Version 1.0
 - 🬀 User database
-  - 🬀 Properties
-  - 🬀 API documentation
-- 🬀 Cart database
-  - 🬀 Properties
-  - 🬀 API documentation
+  - 🬀 Properties of [each user](https://github.com/armen-gevorgyan/online-shop-services/blob/master/documentation/user/Properties.md) and overall user database
+- 🬀 Authentication Service
+- 🬀 Gateway Service
+- 🬀 Web/Mobile interface for the login feature
+- 🬀 Docker image containing the services which can be deployed to the clouds(AWS, Google, Azure, etc.)
+- 🬀 API documentation
 
 ### Version 1.1
 - 🬀 Items database
-- 🬀 History database
+- 🬀 Items Service
+- 🬀 Etend the Gateway Service to properly handle the requests for the Items service
+- 🬀 Web/Mobile interface for the following features
+  -  search item
+  -  get items list
+- 🬀 API documentation
+
+### Version 1.2
+- 🬀 Cart database
+- 🬀 Cart Service
+- 🬀 Etend the Gateway Service to properly handle the requests for the Carts service
+- 🬀 Web/Mobile interface for the following features
+  - add to cart
+  - purchase
+- 🬀 API documentation
 
 ### Version 1.3
-- 🬀 Authentication Service
-    - 🬀 Define which external modules(e.g. http) are needed and what to use
-    - 🬀 Define an API interface for login
-    - 🬀 Implement HTTP server to provide the sample data of username and password
-    - 🬀 Implement single user authentication
-    - 🬀 Implement multiple user authentication
-- 🬀 Items Service
-
-### Version 1.4
-- 🬀 Cart Service
+- 🬀 History database
 - 🬀 History Service
-
-### Version 1.5
-- 🬀 Gateway Service
-
-### Version 1.6
-- 🬀 User interaction with WEB/Mobile interface
-  - 🬀 Login
-  - 🬀 Search item
-  - 🬀 Add to cart
-  - 🬀 Get items list
+- 🬀 Etend the Gateway Service to properly handle the requests for the History service
+- 🬀 Web/Mobile interface for the 'get purchased items' feature
+- 🬀 API documentation
 
 ### Later
 - 🬀 Core user activity
 - 🬀 Purchasing an item
+
+## Overall improvements
+- 🬀 Integrate the Google init tests instead of asserts
+- 🬀 Integrate the Valgrind tool to make analyses of the code memory management, threading, performance, etc.
+- 🬀 Code coverage for the tests
